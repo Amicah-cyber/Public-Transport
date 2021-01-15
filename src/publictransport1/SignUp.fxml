@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="584.0" prefWidth="720.0" style="-fx-background-color: #F5F5DC;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="publictransport1.SignUpController">
+   <children>
+      <Label alignment="TOP_CENTER" layoutX="14.0" layoutY="15.0" minHeight="96.0" minWidth="680.0" prefHeight="96.0" prefWidth="680.0" text="PUBLIC TRANSPORT" textAlignment="CENTER" textFill="#ab0808" textOverrun="LEADING_WORD_ELLIPSIS" wrapText="true">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="45.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="71.0" fitWidth="82.0" layoutX="41.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/icons8-taxicab-64.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="176.0" layoutY="111.0" prefHeight="462.0" prefWidth="383.0">
+         <children>
+            <Text depthTest="ENABLE" fontSmoothingType="LCD" layoutX="156.0" layoutY="29.0" nodeOrientation="LEFT_TO_RIGHT" strokeWidth="0.0" text="Fullnames *">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="ftext" depthTest="ENABLE" layoutX="92.0" layoutY="39.0" minHeight="25.0" minWidth="200.0" promptText="Enter here">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+               <effect>
+                  <InnerShadow height="4.7" radius="1.4775" width="3.21" />
+               </effect>
+            </TextField>
+            <Text depthTest="ENABLE" fontSmoothingType="LCD" layoutX="156.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username *">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="utext" depthTest="ENABLE" layoutX="92.0" layoutY="99.0" minHeight="25.0" minWidth="200.0" promptText="Enter here">
+               <effect>
+                  <InnerShadow height="3.21" radius="1.105" width="3.21" />
+               </effect>
+            </TextField>
+            <Text depthTest="ENABLE" fontSmoothingType="LCD" layoutX="103.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="National ID/ Passport No: *" wrappingWidth="178.1455078125">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="ntext" depthTest="ENABLE" layoutX="92.0" layoutY="167.0" minHeight="25.0" minWidth="200.0" promptText="Enter here">
+               <effect>
+                  <InnerShadow height="3.21" radius="1.105" width="3.21" />
+               </effect>
+            </TextField>
+            <Text depthTest="ENABLE" fontSmoothingType="LCD" layoutX="153.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile No: *">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="mtext" depthTest="ENABLE" layoutX="92.0" layoutY="228.0" minHeight="25.0" minWidth="200.0" promptText="Enter here">
+               <effect>
+                  <InnerShadow height="3.21" radius="1.105" width="3.21" />
+               </effect>
+            </TextField>
+            <Text depthTest="ENABLE" fontSmoothingType="LCD" layoutX="158.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password *">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <PasswordField fx:id="pass" layoutX="92.0" layoutY="293.0" minHeight="20.0" minWidth="200.0" promptText="Enter here" />
+            <Text depthTest="ENABLE" fontSmoothingType="LCD" layoutX="131.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm Password *">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <PasswordField fx:id="cpass" layoutX="92.0" layoutY="353.0" minHeight="20.0" minWidth="200.0" promptText="Enter here" />
+            <Button fx:id="signbtn" alignment="CENTER" contentDisplay="CENTER" layoutX="92.0" layoutY="390.0" minHeight="25.0" minWidth="200.0" mnemonicParsing="false" onAction="#signup" text="Sign Up" textFill="#5e0202" textOverrun="CLIP" wrapText="true">
+               <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+               </font>
+            </Button>
+            <Text fx:id="textlogin" layoutX="91.0" layoutY="444.0" onMouseClicked="#gotologin" onTouchPressed="#gotologin" strokeType="OUTSIDE" strokeWidth="0.0" text="Already have an account? Sign in here" underline="true" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

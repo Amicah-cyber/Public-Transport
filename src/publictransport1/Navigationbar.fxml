@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="bp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="623.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="publictransport1.NavigationbarController">
+   <left>
+      <VBox fx:id="vb" prefHeight="400.0" prefWidth="163.0" style="-fx-background-color: #ffe082;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="125.0" prefWidth="163.0">
+               <children>
+                  <ImageView fitHeight="52.0" fitWidth="40.0" layoutX="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Presentation/icons8-taxicab-64.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="22.0" layoutY="47.0" prefHeight="52.0" prefWidth="121.0" text="Public Transport" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button fx:id="passbtn" mnemonicParsing="false" onAction="#booking" prefHeight="43.0" prefWidth="170.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Home">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="tickbtn" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#tickets" prefHeight="43.0" prefWidth="170.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Tickets">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="contactbtn" layoutX="10.0" layoutY="53.0" mnemonicParsing="false" onAction="#contact" prefHeight="43.0" prefWidth="170.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Contact Us">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="helpbtn" layoutX="10.0" layoutY="96.0" mnemonicParsing="false" onAction="#help" prefHeight="43.0" prefWidth="170.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Help">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane fx:id="ap" prefHeight="651.0" prefWidth="594.0" style="-fx-background-color: #F5F5CC;" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
